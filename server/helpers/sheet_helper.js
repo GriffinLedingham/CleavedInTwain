@@ -45,9 +45,14 @@ module.exports = function () {
 
   sheet_Helper.isSheetOld = function(cb) {
     fs.stat('data.json', (err, stats) => {
-      var mtime = new Date(util.inspect(stats.mtime)).getTime()/1000
-      //Sheet is old if older than an hour
-      cb( ((Math.floor(Date.now()/1000)) - mtime) > 3600 )
+      if(typeof stats == 'undefined') {
+        console.log('Sheet doesnt exist, crawling...')
+        cb(true)
+      } else {
+        var mtime = new Date(util.inspect(stats.mtime)).getTime()/1000
+        //Sheet is old if older than an hour
+        cb( ((Math.floor(Date.now()/1000)) - mtime) > 3600 )
+      }
     })
   }
 

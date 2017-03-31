@@ -1,4 +1,4 @@
-var whacko = require('whacko')
+var whacko = require('cheerio')
 var fs = require('fs')
 var Handlebars = require('handlebars')
 

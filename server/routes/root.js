@@ -5,7 +5,7 @@
 var express = require('express')
 var fs = require('fs')
 var path = require('path');
-var whacko = require('whacko')
+var whacko = require('cheerio')
 var _             = require('lodash')
 
 module.exports = function () {

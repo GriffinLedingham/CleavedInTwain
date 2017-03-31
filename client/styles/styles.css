@@ -1,0 +1,17 @@
+#app {
+
+}
+
+body {
+  margin:0;
+}
+
+/*Portrait Mobile Media Query*/
+@media (max-width: 600px) {
+  
+}
+
+/*Landscape Mobile Media Query*/
+@media only screen and (orientation : landscape) and (max-height: 400px) {
+
+}

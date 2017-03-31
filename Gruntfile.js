@@ -189,7 +189,7 @@ module.exports = function( grunt )
     grunt.registerTask( 'build', [ 'clean:dev','bower','babel:dev','browserify:dev','concat','copy' /*, 'cacheBust'*/] );
     grunt.registerTask( 'build:production', [ 'clean:dev','bower','babel:dev','browserify:dev','concat:template','concat:css','uglify','copy'] );
 
-    grunt.registerTask( 'heroku', [ 'build:production', 'copy' ] );
+    grunt.registerTask( 'heroku', [ 'build:production'] );
 
     grunt.registerTask( 'server', [ 'express' ] );
     grunt.registerTask( 'serve', [ 'build','server','watch' ] );

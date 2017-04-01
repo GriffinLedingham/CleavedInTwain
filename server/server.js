@@ -10,7 +10,7 @@ app.use(compression({
     return true;
   }
 }))
-app.use(express.static('www', { maxAge: 14*86400000 }))
+app.use(express.static('www', { maxAge: 1 }))
 app.use( bodyParser.json() )
 app.use(bodyParser.urlencoded({
   extended: true

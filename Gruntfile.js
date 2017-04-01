@@ -187,7 +187,7 @@ module.exports = function( grunt )
     grunt.loadNpmTasks( 'grunt-execute' );
 
     grunt.registerTask( 'build', [ 'clean:dev','bower','babel:dev','browserify:dev','concat','copy' /*, 'cacheBust'*/] );
-    grunt.registerTask( 'build:production', [ 'clean:dev','bower','babel:dev','browserify:dev','concat:template','concat:css','uglify','copy'] );
+    grunt.registerTask( 'build:production', [ 'clean:dev','bower','babel:dev','browserify:dev','concat:template','concat:css','uglify','copy'/*, 'cacheBust'*/] );
 
     grunt.registerTask( 'heroku', [ 'build:production'] );
 

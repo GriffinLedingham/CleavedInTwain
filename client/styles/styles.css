@@ -194,6 +194,12 @@ body {
   text-decoration: none;
 }
 
+.back-arrow-img {
+  height: 25px;
+  top: 5px;
+  position: relative;
+}
+
 .back-arrow.roster {
   display:none;
 }

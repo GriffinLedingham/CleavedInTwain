@@ -17,7 +17,7 @@ var Framework = function(){
   }
 
   this.init = function(){
-    this.initTemplates()
+
   }
 
   this.isMobile = function(){

@@ -1,14 +1,216 @@
+body {
+  margin:0;
+  background:#1f1f1f;
+  font-family: 'Palanquin Dark', sans-serif;
+}
+
 #app {
 
 }
 
-body {
-  margin:0;
+#header {
+  background:url('/images/header-bg.jpg');
+  background-size:100% 100%;
+  text-align: center;
+  color:white;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height:69px;
+  z-index: 2;
+  box-sizing: border-box;
+  padding-top:20px;
+  box-shadow: 1px 1px 20px 3px rgba(0, 0, 0, 0.59);
 }
+
+.header-img {
+  height: 100%;
+  position: relative;
+  top: -10px;
+}
+
+#profile_wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 69px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background:#231207;
+  padding:20px;
+  padding-left: 25px;
+}
+
+#roster_wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 69px;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.player-roster-item {
+  color: #D7C1E0;
+  padding:20px;
+  display:block;
+  cursor:pointer;
+  background: #231207;
+  text-decoration: none;
+}
+.player-roster-item:nth-child(odd) {
+  background:#2b1507 !important;
+}
+
+.player-roster-item .name {
+  margin-left:10px;
+}
+
+.sprite-border-grey {
+  border: 1px solid #5f5f5f;
+  border-radius: 3px;
+}
+
+.wcl-profile-badge {
+  top:-5px !important;
+}
+
+.wcl-parse {
+  padding:0px;
+  padding-left:7px;
+  padding-right:7px;
+  padding-bottom:2px;
+  background:black;
+  border: 1px solid #5f5f5f;
+  border-radius: 6px;
+  position:relative;
+  font-size:12px;
+  top:-1px;
+  margin-left: 10px;
+  display:inline-block;
+}
+
+.wcl-parse.legendary {color: rgb(255, 128, 0) !important;}
+.wcl-parse.epic {color: rgb(163, 53, 238) !important;}
+.wcl-parse.rare {color: rgb(0, 112, 255) !important;}
+.wcl-parse.uncommon {color: rgb(30, 255, 0) !important;}
+.wcl-parse.common {color: #666 !important;}
+
+.gear-name.legendary {color: rgb(255, 128, 0) !important;}
+.gear-name.epic {color: rgb(163, 53, 238) !important;}
+.gear-name.rare {color: rgb(0, 112, 255) !important;}
+.gear-name.uncommon {color: rgb(30, 255, 0) !important;}
+.gear-name.common {color: #666 !important;}
+
+.profile-avg-ilvl {color: rgb(163, 53, 238) !important;margin-left:6px;}
+.profile-avg-ilvl-sub {font-size:12px;}
+
+.profile-name {
+  font-size:36px;
+  height: 56px;
+  display: inline-block;
+}
+
+#profile_class_icon_wrapper {
+  display:inline-block;
+  bottom:4px;
+  position: relative;
+  margin-left: 10px;
+}
+
+#profile_class_spec {
+  color:white;
+  text-transform: capitalize;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+#gear_header {
+  color:#ffb100;
+  font-size:20px;
+  margin-top: 15px;
+}
+
+.profile-sep {
+  height:1px;
+  width:90%;
+  background: #b1997f;
+  opacity: 0.3;
+
+  display: block;
+  margin-top: 10px;
+}
+
+.gear-item {
+  margin-left: 5px;
+  color:#ffb100;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.gear-name {
+  margin-top:-5px;
+  margin-left:10px;
+}
+
+.gear-ilvl {
+  color:white;
+  margin-left: 10px;
+  margin-top: -8px;
+  font-size: 12px;
+}
+
+.collapse-button {
+    background: #211510;
+    border: solid 1px #504137;
+    color: #ffb100;
+    padding-top: 0;
+    padding-bottom: 5px;
+    display: inline-block;
+    line-height: 14px;
+    padding-left: 6px;
+    padding-right: 5px;
+    float: right;
+    margin-top: 10px;
+    box-sizing: border-box;
+    height: 20px;
+    width: 20px;
+}
+
+.back-arrow {
+  color: #ffb100;
+  position: absolute;
+  left: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  top: 11px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+.back-arrow.roster {
+  display:none;
+}
+
+/*
+
+Color Pallet:
+#38486F dark blue
+#584F84 dark purple
+#876A96 medium purple
+#D7C1E0 light purple
+
+*/
 
 /*Portrait Mobile Media Query*/
 @media (max-width: 600px) {
-  
+
 }
 
 /*Landscape Mobile Media Query*/

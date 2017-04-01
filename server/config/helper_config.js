@@ -4,6 +4,7 @@ module.exports = {
     'template',
     'meta',
     'cache',
-    'sheet'
+    'sheet',
+    'roster'
   ]
 }

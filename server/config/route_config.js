@@ -1,5 +1,6 @@
 module.exports = {
   routeFiles: [
-    'api'
+    'api',
+    'u'
   ],
 }

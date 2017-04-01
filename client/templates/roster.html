@@ -1,0 +1,13 @@
+<script id="rosterTemplate" type="text/x-handlebars-template">
+  <div id="roster_wrapper">
+  {{#players}}
+    <a class="player-roster-item" href="/u/{{name}}">
+      <span class="wow-sprites {{class_uri}} size-16 sprite-border-grey"></span>
+      <span class="class-sprites {{class_uri}} {{spec}} sprite-border-grey"></span>
+      <span class="name {{class_uri}}">{{name}}</span>
+      <span class="wcl-parse {{wl_rarity}}">{{wl_avg}}</span>
+    </a>
+  {{/players}}
+  </div>
+</script>
+

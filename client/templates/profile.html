@@ -1,0 +1,26 @@
+<script id="profileTemplate" type="text/x-handlebars-template">
+  <div id="profile_wrapper">
+    <span class="profile-name name {{class_uri}}">{{name}}</span>
+    <div id="profile_class_icon_wrapper">
+      <span class="wow-sprites {{class_uri}} size-16 sprite-border-grey"></span>
+      <span class="class-sprites {{class_uri}} {{spec}} sprite-border-grey"></span>
+    </div>
+    <span class="wcl-profile-badge wcl-parse {{wl_rarity}}">{{wl_avg}}</span>
+    <div id="profile_class_spec">{{spec}}</div>
+    <div id="gear_header">
+      Gear <span class="profile-avg-ilvl">{{ilvl}}</span><span class="profile-avg-ilvl-sub"> avg.</span>
+      <span id="collapse_gear" class="collapse-button">-</span>
+    </div>
+    <div class="profile-sep"></div>
+    <div id="gear_container">
+      {{#gear}}
+      <div class="gear-item">
+        {{slot}}
+        <div class="gear-name {{rarity}}">{{name}}</div>
+        <div class="gear-ilvl">{{lvl}} Item Level</div>
+      </div>
+      {{/gear}}
+    </div>
+  </div>
+</script>
+

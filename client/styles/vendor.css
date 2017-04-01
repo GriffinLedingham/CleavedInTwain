@@ -1,0 +1,111 @@
+.wow-sprites {background: url("/images/wow.png")!important;background-repeat: no-repeat;overflow: hidden;display: inline-block;}
+.wow-sprites.size-16 {position:relative; top:4px;}
+.wow-sprites.warrior.size-16  {background-position: -120px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.monk.size-16 {background-position: -168px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.druid.size-16 {background-position: -152px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.demonhunter.size-16 {background-position: -184px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.paladin.size-16 {background-position: -200px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.hunter.size-16 {background-position: -224px 0!important;width: 16px;height: 16px;}
+.wow-sprites.rogue.size-16 {background-position: -224px -16px!important;width: 16px;height: 16px;}
+.wow-sprites.priest.size-16 {background-position: -224px -32px!important;width: 16px;height: 16px;}
+.wow-sprites.deathknight.size-16 {background-position: -56px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.shaman.size-16 {background-position: -72px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.mage.size-16 {background-position: -88px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.warlock.size-16 {background-position: -104px -196px!important;width: 16px;height: 16px;}
+.wow-sprites.warrior.size-56  {background-position: -168px 0!important;width: 56px;height: 56px}
+.wow-sprites.monk.size-56 {background-position: 0 -56px!important;width: 56px;height: 56px}
+.wow-sprites.druid.size-56 {background-position: -56px -56px!important;width: 56px;height: 56px}
+.wow-sprites.demonhunter.size-56 {background-position: -112px 0!important;width: 56px;height: 56px}
+.wow-sprites.paladin.size-56 {background-position: -112px -56px!important;width: 56px;height: 56px}
+.wow-sprites.hunter.size-56 {background-position: 0 -112px!important;width: 56px;height: 56px}
+.wow-sprites.rogue.size-56 {background-position: -56px -112px!important;width: 56px;height: 56px}
+.wow-sprites.priest.size-56 {background-position: -112px -112px!important;width: 56px;height: 56px}
+.wow-sprites.deathknight.size-56 {background-position: 0 0!important;width: 56px;height: 56px}
+.wow-sprites.shaman.size-56 {background-position: -168px -56px!important;width: 56px;height: 56px}
+.wow-sprites.mage.size-56 {background-position: -168px -112px!important;width: 56px;height: 56px}
+.wow-sprites.warlock.size-56 {background-position: 0 -168px!important;width: 56px;height: 56px}
+
+.warrior  {color:#c69b6d;}
+.monk {color:#00ffba;}
+.druid {color:#ff7c0a;}
+.demonhunter {color:#a330c9;}
+.paladin {color:#f48cba;}
+.hunter {color:#aad372;}
+.rogue {color:#fff468;}
+.priest {color:#f0ebe0;}
+.deathknight {color:#c41e3b;}
+.shaman {color:#2359ff;}
+.mage {color:#68ccef;}
+.warlock {color:#9382c9;}
+
+.class-sprites {top:4px;position:relative;height:16px;width:16px;background: url("/images/spec-16.jpeg")!important;background-repeat: no-repeat;overflow: hidden;display: inline-block;}
+.class-sprites.warrior.arms{background-position: 0px 0px !important;}
+.class-sprites.warrior.fury{background-position: 0px -16px !important;}
+.class-sprites.warrior.protection{background-position: 0px -32px !important;}
+.class-sprites.paladin.holy {background-position: 0px -48px !important;}
+.class-sprites.paladin.protection {background-position: 0px -64px !important;}
+.class-sprites.paladin.retribution {background-position: 0px -80px !important;}
+.class-sprites.hunter.beastmastery {background-position: 0px -96px !important;}
+.class-sprites.hunter.marksmanship {background-position: 0px -112px !important;}
+.class-sprites.hunter.survival {background-position: 0px -128px !important;}
+.class-sprites.rogue.assassination {background-position: 0px -144px !important;}
+.class-sprites.rogue.combat {background-position: 0px -160px !important;}
+.class-sprites.rogue.subtlety {background-position: 0px -176px !important;}
+.class-sprites.priest.discipline {background-position: 0px -192px !important;}
+.class-sprites.priest.holy {background-position: 0px -208px !important;}
+.class-sprites.priest.shadow {background-position: 0px -224px !important;}
+.class-sprites.deathknight.blood {background-position: 0px -240px !important;}
+.class-sprites.deathknight.frost {background-position: 0px -256px !important;}
+.class-sprites.deathknight.unholy {background-position: 0px -272px !important;}
+.class-sprites.shaman.elemental {background-position: 0px -288px !important;}
+.class-sprites.shaman.enhancement {background-position: 0px -304px !important;}
+.class-sprites.shaman.restoration {background-position: 0px -320px !important;}
+.class-sprites.mage.arcane {background-position: 0px -336px !important;}
+.class-sprites.mage.fire {background-position: 0px -352px !important;}
+.class-sprites.mage.frost {background-position: 0px -368px !important;}
+.class-sprites.warlock.affliction {background-position: 0px -384px !important;}
+.class-sprites.warlock.demonology {background-position: 0px -400px !important;}
+.class-sprites.warlock.destruction {background-position: 0px -416px !important;}
+.class-sprites.monk.brewmaster {background-position: 0px -432px !important;}
+.class-sprites.monk.mistweaver {background-position: 0px -448px !important;}
+.class-sprites.monk.windwalker {background-position: 0px -464px !important;}
+.class-sprites.druid.balance {background-position: 0px -480px !important;}
+.class-sprites.druid.feral {background-position: 0px -496px !important;}
+.class-sprites.druid.guardian {background-position: 0px -512px !important;}
+.class-sprites.druid.restoration {background-position: 0px -528px !important;}
+.class-sprites.demonhunter.havoc {background-position: 0px -544px !important;}
+.class-sprites.demonhunter.vengeance {background-position: 0px -560px !important;}
+
+
+
+
+
+.s-wow-copper {background-position: -143px -224px!important;width: 15px;height: 16px;}
+.s-wow-expansion-cata {background-position: -130px -168px!important;width: 58px;height: 14px}
+.s-wow-expansion-leg {background-position: -56px -168px!important;width: 74px;height: 14px}
+.s-wow-expansion-mop {background-position: -109px -182px!important;width: 46px;height: 14px}
+.s-wow-expansion-tbc {background-position: -188px -168px!important;width: 30px;height: 14px}
+.s-wow-expansion-wod {background-position: -155px -182px!important;width: 43px;height: 14px}
+.s-wow-expansion-wotlk {background-position: -56px -182px!important;width: 53px;height: 14px}
+.s-wow-fishing {background-position: -56px 0!important;width: 56px;height: 56px}
+.s-wow-gold {background-position: -224px -48px!important;width: 16px;height: 16px;}
+.s-wow-silver {background-position: -128px -224px!important;width: 15px;height: 16px;}
+.s-wow-socket-arcanerelic {background-position: -224px -80px!important;width: 16px;height: 16px;}
+.s-wow-socket-bloodrelic {background-position: -224px -96px!important;width: 16px;height: 16px;}
+.s-wow-socket-blue {background-position: -224px -112px!important;width: 16px;height: 16px;}
+.s-wow-socket-cogwheel {background-position: -224px -128px!important;width: 16px;height: 16px;}
+.s-wow-socket-empty {background-position: -224px -144px!important;width: 16px;height: 16px;}
+.s-wow-socket-felrelic {background-position: -224px -160px!important;width: 16px;height: 16px;}
+.s-wow-socket-firerelic {background-position: -224px -176px!important;width: 16px;height: 16px;}
+.s-wow-socket-frostrelic {background-position: -224px -192px!important;width: 16px;height: 16px;}
+.s-wow-socket-holyrelic {background-position: -224px -208px!important;width: 16px;height: 16px;}
+.s-wow-socket-hydraulic {background-position: 0 -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-ironrelic {background-position: -16px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-liferelic {background-position: -32px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-meta {background-position: -48px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-prismatic {background-position: -64px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-red {background-position: -80px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-shadowrelic {background-position: -96px -224px!important;width: 16px;height: 16px;}
+.s-wow-socket-waterrelic {background-position: -224px -64px!important;width: 16px;height: 16px;}
+.s-wow-socket-windrelic {background-position: -136px -196px!important;width: 16px;height: 16px;}
+.s-wow-socket-yellow {background-position: -112px -224px!important;width: 16px;height: 16px;}

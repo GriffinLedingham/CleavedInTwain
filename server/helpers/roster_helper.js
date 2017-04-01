@@ -37,12 +37,7 @@ module.exports = function () {
   }
 
   roster_Helper.formatPlayer = function(player) {
-    var wcl_rarity = ''
-    if(player.wcl_avg >= 95) wcl_rarity = 'legendary'
-    else if(player.wcl_avg >= 80) wcl_rarity = 'epic'
-    else if(player.wcl_avg >= 50) wcl_rarity = 'rare'
-    else if(player.wcl_avg >= 25) wcl_rarity = 'uncommon'
-    else wcl_rarity = 'common'
+    var wcl_rarity = calcRarity(player.wcl_avg)
 
     var qualityLookup = {
       1: 'common',
@@ -69,19 +64,61 @@ module.exports = function () {
       {slot: 'trinket',lvl: player.trinket2_ilvl,id: player.trinket2_id,name: player.trinket2_name,rarity: qualityLookup[player.trinket2_quality]},
     ]
 
+    var dungeons = [
+      {name:'Eye of Azshara',abbr:'EoA',abbr_uri:'eoa',count:player.eyeOfAzshara},
+      {name:'Darkheart Thicket',abbr:'DHT',abbr_uri:'dht',count:player.darkheartThicket},
+      {name:'Neltharion\'s Lair',abbr:'NL',abbr_uri:'nl',count:player['neltharion\'sLair']},
+      {name:'Halls of Valor',abbr:'HoV',abbr_uri:'hov',count:player.hallsOfValor},
+      {name:'Violet Hold',abbr:'VH',abbr_uri:'vh',count:player.violetHold},
+      {name:'Vault of the Wardens',abbr:'VoW',abbr_uri:'vow',count:player.vaultOfTheWardens},
+      {name:'Black Rook Hold',abbr:'BRH',abbr_uri:'brh',count:player.blackRookHold},
+      {name:'Maw of Souls',abbr:'MoS',abbr_uri:'mos',count:player.mawOfSouls},
+      {name:'Court of Stars',abbr:'CoS',abbr_uri:'cos',count:player.courtOfStars},
+      {name:'Arcway',abbr:'AW',abbr_uri:'aw',count:player.arcway},
+      {name:'Karazhan',abbr:'Kara',abbr_uri:'kara',count:player.karazhan},
+      {name:'Cathedral Of Eternal Night',abbr:'CEN',abbr_uri:'cen',count:player.cathedralOfEternalNight}
+    ]
+
+    var wcl = [
+      {name:'Skorpyron',score:player.wcl_skorp.toString().replace('-',0),abbr:'wcl_skorp',rarity:calcRarity(player.wcl_skorp)},
+      {name:'Chronomatic Anomoly',score:player.wcl_chrono.toString().replace('-',0),abbr:'wcl_chrono',rarity:calcRarity(player.wcl_chrono)},
+      {name:'Trilliax',score:player.wcl_trill.toString().replace('-',0),abbr:'wcl_trill',rarity:calcRarity(player.wcl_trill)},
+      {name:'Spellblade Aluriel',score:player.wcl_spell.toString().replace('-',0),abbr:'wcl_spell',rarity:calcRarity(player.wcl_spell)},
+      {name:'Tichondrius',score:player.wcl_tich.toString().replace('-',0),abbr:'wcl_tich',rarity:calcRarity(player.wcl_tich)},
+      {name:'Star Augur',score:player.wcl_star.toString().replace('-',0),abbr:'wcl_star',rarity:calcRarity(player.wcl_star)},
+      {name:'Krosus',score:player.wcl_krosus.toString().replace('-',0),abbr:'wcl_krosus',rarity:calcRarity(player.wcl_krosus)},
+      {name:'High Botanist Tel\'arn',score:player.wcl_bot.toString().replace('-',0),abbr:'wcl_bot',rarity:calcRarity(player.wcl_bot)},
+      {name:'Grand Magistrix Elisande',score:player.wcl_eli.toString().replace('-',0),abbr:'wcl_eli',rarity:calcRarity(player.wcl_eli)},
+      {name:'Gul\'Dan',score:player.wcl_guldan.toString().replace('-',0),abbr:'wcl_guldan',rarity:calcRarity(player.wcl_guldan)},
+    ]
+
     var playerOutput = {
       name: player.name,
       class: player.class,
       class_uri: player.class.toLowerCase().replace(/ /g, ''),
       wl_avg: player.wcl_avg,
       wl_rarity: wcl_rarity,
+      wcl: wcl,
       spec: player.current_spec_name.toLowerCase().replace(/ /g, ''),
       ilvl: Math.round(player.ilvl),
-      gear: gear
+      gear: gear,
+      dungeon_count: player.dungeons_done_total,
+      dungeon_week: player.dungeons_this_week,
+      dungeons: dungeons
     }
 
     return playerOutput
   }
 
   return roster_Helper
+}
+
+function calcRarity(num) {
+  var rarity = ''
+  if(num >= 95) rarity = 'legendary'
+  else if(num >= 80) rarity = 'epic'
+  else if(num >= 50) rarity = 'rare'
+  else if(num >= 25) rarity = 'uncommon'
+  else rarity = 'common'
+  return rarity
 }

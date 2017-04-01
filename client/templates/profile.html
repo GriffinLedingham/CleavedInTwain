@@ -6,7 +6,37 @@
       <span class="class-sprites {{class_uri}} {{spec}} sprite-border-grey"></span>
     </div>
     <span class="wcl-profile-badge wcl-parse {{wl_rarity}}">{{wl_avg}}</span>
+    <div id="profile_guild">Cleaved In Twain</div>
     <div id="profile_class_spec">{{spec}}</div>
+
+    <div id="wcl_header">
+      Warcraft Logs <span class="profile-wcl-tot {{wl_rarity}}">{{wl_avg}}</span><span class="profile-wcl-tot-sub"> % avg.</span>
+      <span id="collapse_wcl" class="collapse-button">-</span>
+    </div>
+    <div class="profile-sep"></div>
+    <div id="wcl_container">
+      {{#wcl}}
+        <div class="wcl-item">
+          <img src="/images/{{abbr}}.jpg" class="wcl-icon"><span class="wcl-name">{{name}}</span>
+          <div class="wcl-count"><span class="profile-wcl-tot {{rarity}}">{{score}}%</span> Best Parse</div>
+        </div>
+      {{/wcl}}
+    </div>
+
+    <div id="dung_header">
+      Dungeons <span class="profile-dng-tot">{{dungeon_count}}</span><span class="profile-dng-tot-sub"> total</span>
+      <span id="collapse_dung" class="collapse-button">-</span>
+    </div>
+    <div class="profile-sep"></div>
+    <div id="dung_container">
+      {{#dungeons}}
+        <div class="dng-item">
+          <img src="/images/{{abbr_uri}}.jpg" class="dungeon-icon"><span class="dng-name">{{name}}</span>
+          <div class="dng-count">{{count}} Mythic Completed</div>
+        </div>
+      {{/dungeons}}
+    </div>
+
     <div id="gear_header">
       Gear <span class="profile-avg-ilvl">{{ilvl}}</span><span class="profile-avg-ilvl-sub"> avg.</span>
       <span id="collapse_gear" class="collapse-button">-</span>
@@ -21,6 +51,7 @@
       </div>
       {{/gear}}
     </div>
+
   </div>
 </script>
 

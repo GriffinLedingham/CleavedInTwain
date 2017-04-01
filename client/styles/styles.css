@@ -71,7 +71,7 @@ body {
 }
 
 .sprite-border-grey {
-  border: 1px solid #5f5f5f;
+  border: 1px solid #4e3a2b;
   border-radius: 3px;
 }
 
@@ -85,7 +85,7 @@ body {
   padding-right:7px;
   padding-bottom:2px;
   background:black;
-  border: 1px solid #5f5f5f;
+  border: 1px solid #4e3a2b;
   border-radius: 6px;
   position:relative;
   font-size:12px;
@@ -100,6 +100,12 @@ body {
 .wcl-parse.uncommon {color: rgb(30, 255, 0) !important;}
 .wcl-parse.common {color: #666 !important;}
 
+.profile-wcl-tot.legendary {color: rgb(255, 128, 0) !important;}
+.profile-wcl-tot.epic {color: rgb(163, 53, 238) !important;}
+.profile-wcl-tot.rare {color: rgb(0, 112, 255) !important;}
+.profile-wcl-tot.uncommon {color: rgb(30, 255, 0) !important;}
+.profile-wcl-tot.common {color: #666 !important;}
+
 .gear-name.legendary {color: rgb(255, 128, 0) !important;}
 .gear-name.epic {color: rgb(163, 53, 238) !important;}
 .gear-name.rare {color: rgb(0, 112, 255) !important;}
@@ -108,6 +114,12 @@ body {
 
 .profile-avg-ilvl {color: rgb(163, 53, 238) !important;margin-left:6px;}
 .profile-avg-ilvl-sub {font-size:12px;}
+
+.profile-dng-tot {color: white !important;margin-left:6px;}
+.profile-dng-tot-sub {font-size:12px;}
+
+.profile-wcl-tot {color: white !important;}
+.profile-wcl-tot-sub {font-size:12px;}
 
 .profile-name {
   font-size:36px;
@@ -122,6 +134,13 @@ body {
   margin-left: 10px;
 }
 
+#profile_guild {
+  color:rgb(30, 255, 0) !important;
+  text-transform: capitalize;
+  font-size: 18px;
+  margin-left: 3px;
+}
+
 #profile_class_spec {
   color:white;
   text-transform: capitalize;
@@ -130,6 +149,18 @@ body {
 }
 
 #gear_header {
+  color:#ffb100;
+  font-size:20px;
+  margin-top: 15px;
+}
+
+#dung_header {
+  color:#ffb100;
+  font-size:20px;
+  margin-top: 15px;
+}
+
+#wcl_header {
   color:#ffb100;
   font-size:20px;
   margin-top: 15px;
@@ -150,11 +181,55 @@ body {
   color:#ffb100;
   margin-top: 10px;
   text-transform: capitalize;
+  display: inline-block;
+  min-width: 260px
+}
+
+.dng-item {
+  margin-left: 5px;
+  color:#ffb100;
+  margin-top: 10px;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 260px
+}
+
+.wcl-item {
+  margin-left: 5px;
+  color:#ffb100;
+  margin-top: 10px;
+  text-transform: capitalize;
+  display: inline-block;
+  min-width: 260px;
+}
+
+.dng-count {
+  color:white;
+  margin-left: 50px;
+  margin-top: -8px;
+  font-size: 12px;
+}
+
+.wcl-count {
+  color:white;
+  margin-left: 50px;
+  margin-top: -8px;
+  font-size: 12px;
 }
 
 .gear-name {
   margin-top:-5px;
   margin-left:10px;
+}
+
+.dng-name {
+  margin-top:-5px;
+  margin-left:15px;
+}
+
+.wcl-name {
+  margin-top:-5px;
+  margin-left:15px;
 }
 
 .gear-ilvl {
@@ -202,6 +277,24 @@ body {
 
 .back-arrow.roster {
   display:none;
+}
+
+.dungeon-icon {
+  height: 32px;
+  width:32px;
+  position: relative;
+  border: 1px solid #4e3a2b;
+  border-radius: 3px;
+  top:20px;
+}
+
+.wcl-icon {
+  height: 32px;
+  width:32px;
+  position: relative;
+  border: 1px solid #4e3a2b;
+  border-radius: 3px;
+  top:20px;
 }
 
 /*
